@@ -35,38 +35,90 @@
     display:block;
     padding:8px;
   }
-  .img1{
+
+
+.About img{
     height:500px;
-    display:inline-block;
-    padding:5%;
+    width:400px;
+    float:left;
+  }
+
+.About p{
+  padding:120px;
+  text-align: center;
+  font-size: 20px;
 }
 p{
     max-width: 1000px;
 }
 h2{
-    position: center;
+  text-align:center;
+  font-size:30px;
 }
+
 .mySkills{
     display:flex;
-    flex-direction:row;
+    flex-direction:column;
     background-color: #BFBFBF;
     padding:50px;
     
 }
+
 .flexChild{
     padding:10px;
     margin:10px;
-    height:200px;
+    height:50px;
     background-color:#7D8C82;
     display:flex;
     align-items:center;
     justify-content:center;
+    font-weight:bolder;
 }
-.myWork{
+.context{
+  text-align:center;
+}
+.workGrid{
   display:grid;
-  grid-template-columns: 50% 50%;
-  grid-template-rows: 50% 50%;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1 fr;
   grid-template-areas:
-  "image1 firstWork"
-  "image2 secondWork";
+  "firstWork imageOne"
+  "imageTwo secondWork";
+}
+.imageOne{
+  height:400px;
+  width:400px;
+  padding:5%;
+}
+.imageTwo{
+  height:400px;
+  width:400px;
+  padding:5%;
+}
+button{
+  padding: 15px 32px;
+  text-align: center;
+  background-color:#7D8C82;
+  color:white;
+  margin:10px;
+}
+.firstWork h5{
+font-weight:bolder;
+font-size:25px;
+}
+.secondWork h5{
+  font-weight:bolder;
+  font-size: 25px;
+}
+.firstWork p{
+  padding-right: 5%;
+}
+.secondWork p{
+  padding-right: 5%;
+}
+.buttonTwo{
+  align:center;
+  text-align:center;
+  color: black;
+  background-color:#8c6658;
 }
