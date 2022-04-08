@@ -122,3 +122,6 @@ font-size:25px;
   color: black;
   background-color:#8c6658;
 }
+@media only screen and (max-width:600){
+  flex-direction:columns;   
+}
